@@ -2,8 +2,12 @@ package com.example.ayei.demo_delivery.services;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
 import com.example.ayei.demo_delivery.entities.Item;
 import com.example.ayei.demo_delivery.repository.ItemRepository;
+
+@Component
 
 public class ItemServiceImpl implements ItemService {
 
