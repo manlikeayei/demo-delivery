@@ -3,8 +3,11 @@ package com.example.ayei.demo_delivery.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import entities.Vehicle;
 import repository.VehicleRepository;
+@Service
 
 public class VehicleServiceImpl implements VehicleService {
 
