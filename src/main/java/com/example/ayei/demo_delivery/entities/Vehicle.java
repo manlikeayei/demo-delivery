@@ -1,6 +1,5 @@
-package entities;
+package com.example.ayei.demo_delivery.entities;
 
-    
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -18,12 +17,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-
-
-
 public class Vehicle {
 
-    @Id
+
+ @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
@@ -120,7 +117,5 @@ public class Vehicle {
     
 
 
+
 }
-
-
-

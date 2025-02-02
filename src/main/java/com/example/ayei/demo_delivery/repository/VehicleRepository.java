@@ -1,18 +1,15 @@
-package repository;
+package com.example.ayei.demo_delivery.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.stereotype.Repository;
 
-import entities.Vehicle;
-
-@Repository
+import com.example.ayei.demo_delivery.entities.Vehicle;
 
 
 
-public interface VehicleRepository extends JpaRepository<Vehicle, Long> { 
+    public interface VehicleRepository extends JpaRepository<Vehicle, Long> { 
     
 
     @Query("Select vehicle FROM Vehicle vehicle WHERE vehicle.status='maintenance'")
@@ -24,3 +21,4 @@ public interface VehicleRepository extends JpaRepository<Vehicle, Long> {
 
     Vehicle getVehicleByPlateNumber(String plateNumber);
 }
+

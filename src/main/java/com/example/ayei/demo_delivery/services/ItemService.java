@@ -2,7 +2,7 @@ package com.example.ayei.demo_delivery.services;
 
 import java.util.List;
 
-import entities.Item;
+import com.example.ayei.demo_delivery.entities.Item;
 
 public interface ItemService {
 

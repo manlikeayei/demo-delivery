@@ -2,7 +2,7 @@ package com.example.ayei.demo_delivery.services;
 
 import java.util.List;
 
-import entities.Vehicle;
+import com.example.ayei.demo_delivery.entities.Vehicle;
 
 public interface VehicleService {
 

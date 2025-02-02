@@ -5,8 +5,10 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import entities.Vehicle;
-import repository.VehicleRepository;
+import com.example.ayei.demo_delivery.repository.VehicleRepository;
+
+import com.example.ayei.demo_delivery.entities.Vehicle;
+
 @Service
 
 public class VehicleServiceImpl implements VehicleService {

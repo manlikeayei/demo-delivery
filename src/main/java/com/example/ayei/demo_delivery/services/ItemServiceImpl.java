@@ -2,18 +2,13 @@ package com.example.ayei.demo_delivery.services;
 
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-
-import entities.Item;
-import repository.ItemRepository;
-@Service
+import com.example.ayei.demo_delivery.entities.Item;
+import com.example.ayei.demo_delivery.repository.ItemRepository;
 
 public class ItemServiceImpl implements ItemService {
 
 
     private final ItemRepository itemRepository;
-
-    
     public ItemServiceImpl(ItemRepository itemRepository) {
         this.itemRepository = itemRepository;
     }
@@ -32,7 +27,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public List<Item> getAllItems() {
-       
+        
         return itemRepository.findAll();
     }
 
@@ -41,10 +36,6 @@ public class ItemServiceImpl implements ItemService {
         
         return itemRepository.findById(id).get();
     }
-
     
-
-
-
 
 }

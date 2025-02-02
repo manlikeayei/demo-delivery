@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.ayei.demo_delivery.services.ItemService;
 import com.example.ayei.demo_delivery.services.VehicleService;
 
-import entities.Vehicle;
+import com.example.ayei.demo_delivery.entities.Vehicle;
 
 
 import org.springframework.http.ResponseEntity;

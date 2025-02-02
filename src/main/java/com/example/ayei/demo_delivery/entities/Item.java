@@ -1,22 +1,18 @@
-package entities;
+package com.example.ayei.demo_delivery.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
-
 import lombok.NoArgsConstructor;
 
-
 @Entity
-
 @AllArgsConstructor
 @NoArgsConstructor
 
 
 public class Item {
-
 
 
     @Id
@@ -50,5 +46,4 @@ public class Item {
     private float weight;
     private String code;
 
-    
 }
