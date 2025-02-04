@@ -23,7 +23,10 @@ public class Vehicle {
  @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
+    private String status;
+    private String type;
+    private float fuelCapacity;
+    private float carryingWeight;
     private String name;
     private String plateNumber;
     public Long getId() {
@@ -106,11 +109,7 @@ public class Vehicle {
     }
 
 
-    private String status;
-    private String type;
-    private float fuelCapacity;
-    private float carryingWeight;
-
+   
 
     @OneToMany
     private List<Item> items;
