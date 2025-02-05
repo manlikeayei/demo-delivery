@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 public class VehicleController {
-    @SuppressWarnings("unused")
+    
     private final ItemService itemService;
 
     private final VehicleService vehicleService;
